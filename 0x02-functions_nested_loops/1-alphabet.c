@@ -1,6 +1,6 @@
 /*
  * File: 1-alphabet.c
- * Auth: Brennan D Baraban
+ * Auth: Ayoub Et-tass
  */
 
 #include "main.h"
