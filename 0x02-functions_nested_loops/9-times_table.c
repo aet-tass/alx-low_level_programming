@@ -3,7 +3,7 @@
  * Auth: Ayoub Et-tass
  */
 
-#include "mainn.h"
+#include "main.h"
 
 /**
  * times_table - Prints the 9 times table, starting with 0.
