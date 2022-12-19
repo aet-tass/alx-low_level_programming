@@ -1,14 +1,8 @@
-/*
- * File: 5-rev_string.c
- * Auth: Ayoub Et-tass
- */
-
 #include "main.h"
-
-
 /**
- * rev_string - Reverses a string.
- * @s: The string to be reversed.
+ * print_rev - prints reverse of string.
+ * @s: value taken from main
+ * Return: (0)
  */
 void print_rev(char *s)
 {
