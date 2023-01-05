@@ -1,7 +1,8 @@
 /*
  * File: 3-factorial.c
- * Auth: Et-tass Ayoub 
+ * Auth: Et-tass Ayoub
  */
+
 #include "main.h"
 
 /**
