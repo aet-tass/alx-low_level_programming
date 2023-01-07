@@ -11,9 +11,9 @@
  * @argv: array of pointers to arguement strings
  * Return: 0
  **/
-int main(int ac, char **av)
+int main(int argc, char **argv)
 {
-	ac = ac;
-	printf("%s\n", av[0]);
+	(void)argc;
+	printf("%s\n", argv[0]);
 	return (0);
 }
