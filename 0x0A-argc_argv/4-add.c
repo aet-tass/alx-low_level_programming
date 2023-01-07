@@ -1,5 +1,5 @@
 /*
- * File: 1-args.c
+ * File: 4-add.c
  * Auth: Et-tass Ayoub
  */
 
@@ -8,27 +8,27 @@
 #include <string.h>
 
 /**
- * num_checker - checks if a given char is number or not
- * @nbr: char to be checked
- * Return: 1, if its a number, else 0
+ * num_checker - checks if str given char is number or not
+ * @str: char to be checked
+ * Return: 1, if its str number, else 0
  **/
-int num_checker(char *nbr)
+int num_checker(char *str)
 {
-	int	i; 
-	int	num; 
+	int	i;
+	int	num;
 	int	len;
 
 	i = 0;
 	num = 0;
-	len = strlen(nbr);
+	len = strlen(str);
 	while (i < len)
 	{
-		if (nbr[i] < '0' || nbr[i] > '9')
+		if (str[i] < '0' || str[i] > '9')
 		{
 			return (-1);
 		}
 		else
-			num = num * 10 + (nbr[i] - '0');
+			num = num * 10 + (str[i] - '0');
 		i++;
 	}
 	return (num);
@@ -41,9 +41,9 @@ int num_checker(char *nbr)
  **/
 int main(int argc, char **argv)
 {
-	int i;
-	int num;
-	int sum;
+	int	i;
+	int	num;
+	int	sum;
 
 	sum = 0;
 	for (i = 1; i < argc; i++)
@@ -59,4 +59,3 @@ int main(int argc, char **argv)
 	printf("%d\n", sum);
 	return (0);
 }
-

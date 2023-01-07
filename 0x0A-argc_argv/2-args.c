@@ -1,5 +1,5 @@
 /*
- * File: 1-args.c
+ * File: 2-args.c
  * Auth: Et-tass Ayoub
  */
 
