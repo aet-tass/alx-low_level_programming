@@ -9,14 +9,14 @@
 
 /**
  * num_checker - checks if a given char is number or not
- * @a: char to be checked
+ * @nbr: char to be checked
  * Return: 1, if its a number, else 0
  **/
 int num_checker(char *nbr)
 {
-	int i; 
-	int num; 
-	int len;
+	int	i; 
+	int	num; 
+	int	len;
 
 	i = 0;
 	num = 0;
@@ -42,8 +42,8 @@ int num_checker(char *nbr)
 int main(int argc, char **argv)
 {
 	int i;
-       	int num;
-       	int sum;
+	int num;
+	int sum;
 
 	sum = 0;
 	for (i = 1; i < argc; i++)
