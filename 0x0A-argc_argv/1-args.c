@@ -7,14 +7,14 @@
 
 /**
  * main - prints the number of arguenments passed to it
- * @ac: arguemnet count
- * @av: array of pointer to arguement strings
+ * @argc: arguemnet count
+ * @argv: array of pointer to arguement strings
  * Return: 0
  **/
-int main(int ac, char **av)
+int main(int argc, char **argv)
 {
-	(void)av;
-	printf("%d\n", ac - 1);
+	(void)argv;
+	printf("%d\n", argc - 1);
 	return (0);
 }
 
