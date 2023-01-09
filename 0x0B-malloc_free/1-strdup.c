@@ -7,25 +7,8 @@
 #include <stdlib.h>
 
 /**
- * _strlen - Returns the length of a string.
- * @str: The string to get the length of.
- *
- * Return: The length of @str.
- */
-
-int	_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-/**
  * *_strdup - returns a pointer to a newly allocated space with copy of arg
- * @a: string to copy
+ * @str: string to copy
  * Return: pointer to array or null
  **/
 
@@ -35,10 +18,14 @@ char *_strdup(char *str)
 	int	len;
 	int	i;
 
+	len = 0;
+	i = 0;
 	if (!str)
 		return (NULL);
-	len = _strlen(str);
-	new_str = malloc(sizeof(char) * len);
+	while (str[len])
+		len++;
+
+	new_str = malloc(sizeof(char) * len + 1);
 	if (!new_str)
 		return (NULL);
 	while (str[i])
