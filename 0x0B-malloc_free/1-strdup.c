@@ -20,8 +20,6 @@ int	_strlen(char *str)
 	int	i;
 	
 	i = 0;
-	if (str == NULL)
-		return(0);
 	while (str[i])
 		i++;
 	return (i);
@@ -38,20 +36,20 @@ int	_strlen(char *str)
 
 char *_strdup(char *str)
 {
-	char 	*strdup;
+	char 	*s;
 	int	len;
 	int	i;
 
 	i = 0;
-	len = _strlen(str) + 1;
-	strdup = malloc(sizeof(char) * len - 1);
+	len = _strlen(str);
+	s = malloc(sizeof(char) * (len + 1));
 	if (!strdup)
 		return (NULL);
 	while (str[i])
 	{
-		strdup[i] = str[i];
+		s[i] = str[i];
 		i++;
 	}
-	strdup[i] = '\0'; 
-	return (strdup);
+	s[i] = '\0'; 
+	return (s);
 }
