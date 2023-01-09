@@ -44,11 +44,9 @@ char *_strdup(char *str)
 
 	i = 0;
 	len = _strlen(str) + 1;
-	strdup = malloc(sizeof(char) * len);
+	strdup = malloc(sizeof(char) * len - 1);
 	if (!strdup)
 		return (NULL);
-	if (!str)
-		return (strdup);
 	while (str[i])
 	{
 		strdup[i] = str[i];
