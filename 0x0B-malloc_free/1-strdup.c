@@ -41,11 +41,13 @@ char *_strdup(char *str)
 	strdup = malloc(sizeof(char) * len);
 	if (!strdup)
 		return (NULL);
+	if (!str)
+		return (NULL);
 	while (str[i] != '\0')
 	{
 		strdup[i] = str[i];
 		i++;
 	}
-/*	strdup[i] = '\0'; */
+	strdup[i] = '\0'; 
 	return (strdup);
 }
