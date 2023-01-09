@@ -1,54 +1,29 @@
-/*
- * file: 1-strdup.c
- * Auth: Et-tass Ayoub
- */
-
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
-
-
-/**
- * _strlen - Returns the length of a string.
- * @str: The string to get the length of.
- *
- * Return: The length of @str.
- */
-
-int	_strlen(char *str)
-{
-	int	i;
-	
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
 /**
  * *_strdup - returns a pointer to a newly allocated space with copy of arg
  * @str: string to copy
  * Return: pointer to array or null
  **/
-
-#include <stdio.h>
-#include <unistd.h>
-
 char *_strdup(char *str)
 {
-	char 	*s;
-	int	len;
-	int	i;
+	char *strDup;
+	int i, j;
 
-	i = 0;
-	len = _strlen(str);
-	s = malloc(sizeof(char) * (len + 1));
-	if (!s)
+	if (str == NULL)
 		return (NULL);
-	while (str[i])
-	{
-		s[i] = str[i];
+	i = 0;
+	while (str[i] != '\0')
 		i++;
+	i++;
+	strDup = malloc(sizeof(*str) * i);
+	if (strDup == NULL)
+		return (NULL);
+	j = 0;
+	while (str[j] != '\0')
+	{
+		strDup[j] = str[j];
+		j++;
 	}
-	return (s);
+	return (strDup);
 }
