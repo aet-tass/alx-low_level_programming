@@ -36,13 +36,13 @@ char *_strdup(char *str)
 	int	len;
 	int	i;
 	
+	if (!str)
+		return (NULL);
 	i = 0;
 	len = _strlen(str) + 1;
 	strdup = malloc(sizeof(char) * len);
 	if (!strdup)
-		return (NULL);
-	if (!str)
-		return (NULL);
+		return (NULL);;
 	while (str[i] != '\0')
 	{
 		strdup[i] = str[i];
