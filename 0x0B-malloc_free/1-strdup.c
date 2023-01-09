@@ -25,7 +25,7 @@ int	_strlen(char *str)
 
 /**
  * *_strdup - returns a pointer to a newly allocated space with copy of arg
- * @str: string to copy
+ * @a: string to copy
  * Return: pointer to array or null
  **/
 
