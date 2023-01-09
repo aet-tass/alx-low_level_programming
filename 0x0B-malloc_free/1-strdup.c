@@ -1,3 +1,4 @@
+
 #include "main.h"
 #include <stdlib.h>
 /**
@@ -5,25 +6,25 @@
  * @str: string to copy
  * Return: pointer to array or null
  **/
+
 char *_strdup(char *str)
 {
-	char *strDup;
-	int i, j;
+	int i;
+	int j;
+	char *p;
 
-	if (str == NULL)
-		return (NULL);
 	i = 0;
-	while (str[i] != '\0')
-		i++;
-	i++;
-	strDup = malloc(sizeof(*str) * i);
-	if (strDup == NULL)
+	while (str[i])
+		++i;
+	i += 1;
+	p = malloc(sizeof(*str) * (i));
+	if (p == NULL)
 		return (NULL);
 	j = 0;
-	while (str[j] != '\0')
+	while (str[j])
 	{
-		strDup[j] = str[j];
-		j++;
+		p[j] = str[j];
+		++j;
 	}
-	return (strDup);
+	return (p);
 }
