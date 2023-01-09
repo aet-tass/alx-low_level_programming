@@ -19,7 +19,7 @@ int	_strlen(char *str)
 	int	i;
 	
 	i = 0;
-	while (str[i] !='\0')
+	while (str[i])
 		i++;
 	return (i);
 }
@@ -30,20 +30,21 @@ int	_strlen(char *str)
  * Return: pointer to array or null
  **/
 
+#include <stdio.h>
+#include <unistd.h>
+
 char *_strdup(char *str)
 {
 	char 	*strdup;
 	int	len;
 	int	i;
-	
-	if (!str)
-		return (NULL);
+
 	i = 0;
 	len = _strlen(str) + 1;
 	strdup = malloc(sizeof(char) * len);
 	if (!strdup)
 		return (NULL);;
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		strdup[i] = str[i];
 		i++;
