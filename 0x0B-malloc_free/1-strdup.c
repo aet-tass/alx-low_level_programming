@@ -42,19 +42,13 @@ char *_strdup(char *str)
 
 	i = 0;
 	len = _strlen(str);
-	if (!str)
-		return (NULL);
 	s = malloc(sizeof(char) * (len + 1));
 	if (!s)
-	{
-		free(s);
 		return (NULL);
-	}
 	while (str[i])
 	{
 		s[i] = str[i];
 		i++;
 	}
-	s[i] = '\0'; 
 	return (s);
 }
