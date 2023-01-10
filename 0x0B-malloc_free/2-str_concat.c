@@ -4,7 +4,7 @@
  */
 
 #include "main.h"
-#include <stdlin.h>
+#include <stdlib.h>
 
 /**
  * *str_concat - concatenates two strings
