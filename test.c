@@ -1,2 +1,0 @@
-#iclide <stdio.h>
-
