@@ -1,8 +1,3 @@
-/*
- * File: 2-print_strings.c
- * Auth: Et-tass Ayoub 
- */
-
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
