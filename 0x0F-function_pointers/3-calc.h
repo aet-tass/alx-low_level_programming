@@ -1,8 +1,3 @@
-/*
- * File: 3-calc.h
- * Auth: Et-tass Ayoub
- */
-
 #ifndef _CALC_H_
 #define _CALC_H_
 
